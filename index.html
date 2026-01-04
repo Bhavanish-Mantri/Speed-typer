@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typer</title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn" aria-label="Settings">
+      <span class="gear"></span>
+    </button>
+
+    <div class="settings hide" id="settings">
+      <form id="settings-form">
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </form>
+    </div>
+
+    <main class="game">
+      <div class="hud">
+        <span>Time: <strong id="time">10s</strong></span>
+        <span>Score: <strong id="score">0</strong></span>
+      </div>
+
+      <div class="container">
+        <h2>Speed Typer</h2>
+        <small>Type the word below</small>
+        <h1 id="word"></h1>
+
+        <input
+          type="text"
+          id="text"
+          autocomplete="off"
+          placeholder="Start typing..."
+        />
+
+        <div id="end-game-container" class="end-game-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
